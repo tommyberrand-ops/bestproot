@@ -1581,7 +1581,181 @@ rapper: {
         ]
     }
 },
+    
+// RAPPEUR VERSION LUXE
+rapperluxe: {
+    type: "default",
+    name: "🎤 Rappeur Luxe",
+    dance: "Chorégraphie Rap / RnB",
+    palmColors: { left: "#00ff00", right: "#ff0000" },
+    finalOutfit: {
+        description: "tenue de rappeur(se) luxueuse et bling-bling",
+        colors: ["vert émeraude", "or", "rouge"],
+        elements: [
+            "manteau en fourrure verte oversized",
+            "ensemble en soie rouge avec motifs GG",
+            "baskets blanches personnalisées avec strass",
+            "ceinture à boucle double G en or massif",
+            "lunettes de soleil teintées vertes"
+        ],
+        accessories: [
+            "chaîne en or avec pendentif panthère",
+            "montre en or sertie de diamants",
+            "bagues aux 10 doigts",
+            "porte-contrôleur Gucci",
+            "écharpe en soie imprimée"
+        ]
+    },
+    hairFluo: ["blond platine", "rouge", "bleu"],
+    background: "soirée privée luxueuse, champagne, voitures de sport, ambiance riche",
+    danceMoves: {
+        part1: [
+            "bounce léger du corps",
+            "isolations des épaules",
+            "chest pops - projection rapide de la poitrine",
+            "body rolls sensuels",
+            "mouvements croisés des bras"
+        ],
+        part2: [
+            "mouvements accélérés des bras",
+            "jeux de doigts stylisés",
+            "hits - arrêts nets sur les temps forts",
+            "déhanchements latéraux",
+            "pas courts et dynamiques"
+        ]
+    }
+},
 
+// RAPPEUR CYBERPUNK
+rappercyber: {
+    type: "default",
+    name: "🎤 Rappeur Cyberpunk",
+    dance: "Chorégraphie Rap futuriste",
+    palmColors: { left: "#00ffff", right: "#ff00ff" },
+    finalOutfit: {
+        description: "tenue de rappeur(se) cyberpunk futuriste",
+        colors: ["noir mat", "cyan néon", "violet électrique"],
+        elements: [
+            "veste en cuir avec lumières LED intégrées",
+            "pantalon cargo avec bandes lumineuses",
+            "baskets auto-laçantes lumineuses",
+            "gants tactiles avec écrans sur les doigts",
+            "lentilles de contact lumineuses"
+        ],
+        accessories: [
+            "casque audio avec visière holographique",
+            "micro flottant (hologramme)",
+            "bracelets connectés avec projections 3D",
+            "tatouages lumineux sur le visage",
+            "drone qui suit pour filmer"
+        ]
+    },
+    hairFluo: ["bleu électrique", "vert néon", "rose fluo"],
+    background: "ville futuriste la nuit, néons, hologrammes, voitures volantes",
+    danceMoves: {
+        part1: [
+            "mouvements robotiques lents",
+            "isolations mécaniques",
+            "glitch moves - mouvements saccadés",
+            "poses futuristes"
+        ],
+        part2: [
+            "danse robotique accélérée",
+            "effets de glitch corporel",
+            "mouvements inspirés des jeux vidéo",
+            "poses de cyborg"
+        ]
+    }
+},
+
+// RAPPEUR BASKET
+rapperbasket: {
+    type: "default",
+    name: "🎤 Rappeur Basketball",
+    dance: "Chorégraphie Rap sportive",
+    palmColors: { left: "#0000ff", right: "#ffa500" },
+    finalOutfit: {
+        description: "tenue de rappeur(se) style basketball streetwear",
+        colors: ["bleu marine", "blanc", "orange fluo"],
+        elements: [
+            "maillot de basket oversize personnalisé",
+            "short long assorti",
+            "baskets Jordan édition limitée",
+            "basketball en main (accessoire)",
+            "bandeau dans les cheveux"
+        ],
+        accessories: [
+            "chaîne avec pendentif ballon de basket",
+            "casquette de sport inclinée",
+            "chaussettes montantes assorties",
+            "sac de sport en bandoulière",
+            "épingles à collection sur le maillot"
+        ]
+    },
+    hairFluo: ["noir", "blond", "orange"],
+    background: "terrain de basket urbain, city lights, ambiance hip-hop",
+    danceMoves: {
+        part1: [
+            "dribbles stylisés avec le ballon",
+            "jeux de pieds rapides",
+            "poses de dunk",
+            "mouvements de streetball"
+        ],
+        part2: [
+            "enchaînements acrobatiques",
+            "jeux avec le ballon de façon sensuelle",
+            "poses de star du basket",
+            "célébration victorieuse"
+        ]
+    }
+},
+
+// RAPPEUR ROCKSTAR
+rapperrock: {
+    type: "default",
+    name: "🎤 Rappeur Rockstar",
+    dance: "Chorégraphie Rap rock",
+    palmColors: { left: "#000000", right: "#ff0000" },
+    finalOutfit: {
+        description: "tenue de rappeur(se) rockstar rebelle",
+        colors: ["noir", "rouge sang", "argent"],
+        elements: [
+            "blouson en cuir clouté",
+            "t-shirt de groupe déchiré",
+            "jeans slim troués",
+            "bottes de motard à lacets rouges",
+            "ceinturon à clous argentés"
+        ],
+        accessories: [
+            "gants sans doigts en cuir",
+            "chaînes et clous partout",
+            "tatouages rockabilly",
+            "piercings multiples",
+            "guitare électrique en accessoire"
+        ]
+    },
+    hairFluo: ["noir", "rouge", "blond"],
+    background: "concert rock, fumée, lumières stroboscopiques, foule en délire",
+    danceMoves: {
+        part1: [
+            "headbang sensuel",
+            "mouvements de guitare",
+            "poses de rockstar arrogantes",
+            "regards provocateurs"
+        ],
+        part2: [
+            "sauts et mouvements énergiques",
+            "jeux avec la guitare",
+            "cambrures rebelles",
+            "final avec lancer de guitare"
+        ]
+    }
+},
+
+
+
+
+    
 cleopatre: {
     type: "default",
     name: "👑 Cléopâtre",
