@@ -5,6 +5,7 @@
 // CORRIGÉ : Priorité absolue aux options spéciales avec renfort vidéo
 // CORRIGÉ : Intégration du MODE ANIMAL (chatte, tigresse, panthère, lionne, lapine)
 // CORRIGÉ : Mains peintes visibles pendant TOUTE la PARTIE 1 (couleurs ne disparaissent pas)
+// CORRIGÉ : Gestion des 5 tenues pour le rappeur urbain
 
 console.log("🚀 Chargement de script.js...");
 
@@ -568,7 +569,9 @@ generateFloatingWords(partie) {
                 maintien: document.getElementById('finalMaintien')?.value || '2',
                 emotion: document.getElementById('finalEmotion')?.value || 'satisfaite',
                 interaction: document.getElementById('finalInteraction')?.value || 'regard'
-            }
+            },
+            // 👇 AJOUT POUR LES 5 TENUES DU RAPPEUR
+            rapperStyle: document.getElementById('rapperStyle')?.value || 'tenue1'
         };
     }
 
@@ -839,6 +842,17 @@ ${hasPriorityEyes ?
   '- Iris hyper détaillés avec motifs complexes (comme une photo macro)\n- Vaisseaux sanguins très fins visibles dans le blanc de l œil\n- Reflets multiples dans les yeux (catchlights) nets et naturels\n- Pupilles qui réagissent à la lumière\n- Netteté maximale sur les yeux (point focal de l image)'}`;
         }
 
+        // 👇 GESTION DE LA TENUE POUR LE RAPPEUR URBAIN (5 STYLES)
+        let outfitText = this.userData.finalOutfit;
+        
+        if (this.userData.country === 'rapper' && countries.rapper.tenues) {
+            const style = this.userData.rapperStyle;
+            const tenue = countries.rapper.tenues[style];
+            if (tenue) {
+                outfitText = `${tenue.description} aux couleurs ${tenue.colors.join(' et ')}. Éléments : ${tenue.elements.join(', ')}. Accessoires : ${tenue.accessories.join(', ')}.`;
+            }
+        }
+
         return `Suite de la transition - DEUXIÈME PARTIE de 6 secondes.
 
 CONTINUITÉ PARFAITE DU VISAGE - ABSOLUMENT CRUCIAL :
@@ -886,7 +900,7 @@ ${this.userData.gestures.viens ? '- Elle fait le geste "VIENS VERS MOI" avec son
 
 NOUVELLE TENUE (TOTALEMENT REMPLACÉE - DÉJÀ PORTÉE) :
 Elle porte maintenant une tenue spectaculaire (déjà enfilée pendant la transition) :
-${this.userData.finalOutfit}
+${outfitText}
 
 CHEVEUX TRANSFORMÉS - COULEURS FLUO (DÉJÀ COLORÉS) :
 ${this.userData.enableFluo ? 
@@ -1536,4 +1550,4 @@ window.initCharacters = initCharacters;
 window.displayPrompt = displayPrompt;
 window.updateRecap = updateRecap;
 
-console.log("📦 script.js chargé avec TOUS les effets - MODE ANIMAL INTÉGRÉ - MAINS PEINTES CORRIGÉES");
+console.log("📦 script.js chargé avec TOUS les effets - MODE ANIMAL INTÉGRÉ - MAINS PEINTES CORRIGÉES - 5 TENUES RAPPEUR");
